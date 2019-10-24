@@ -1,0 +1,52 @@
+body {
+    font-family: Sans-serif;
+    color: #333;
+}
+
+h1 {
+    text-align: center;
+}
+
+.erro {
+    color: #F44;
+}
+
+
+label {
+    display: block;
+    margin: 10px 0 0 0;
+}
+
+input[type=text],
+textarea {
+    width: 100%;
+
+    padding: 3px;
+    border-radius: 5px;
+}
+
+input[type=submit] {
+    float: right;
+    clear: both;
+}
+
+table {
+    width: 100%;
+}
+
+table th {
+    background-color: #EEE;
+    font-size: 18px;
+
+    text-align: center
+}
+
+table td {
+    border-bottom: 1px solid #333;
+    color: #000;
+}
+
+button[type=submit]{
+    float: left;
+   
+}

@@ -1,0 +1,25 @@
+function traduz_data_para_exibir($data)
+{
+if ($data == "" OR $data == "0000-00-00") {
+8.6 OUTRA MANEIRA DE FORMATAR AS DATAS
+117return "";
+}
+$objeto_data = DateTime::createFromFormat('Y-m-d', $data);
+return $objeto_data->format('d/m/Y');
+}
+
+
+function traduz_data_para_exibir_por_regiao($data, $regiao)
+{
+if ($data == "" OR $data == "0000-00-00") {
+return "";
+}
+$objeto_data = DateTime::createFromFormat('Y-m-d', $data);
+$resultado = '';
+if ($regiao == 'EUA') {
+$resultado = $objeto_data->format('m/d/Y');
+} else {
+$resultado = $objeto_data->format('d/m/Y');
+}
+return $resultado;
+}
